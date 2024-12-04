@@ -1,0 +1,23 @@
+version: 2
+
+sources:
+  - name: data226
+    database: project
+    schema: data226
+    description: "Schema which stores raw bitcoin data"
+    tables:
+      - name: stock_price_real_time
+        identifier: stock_price_real_time
+        description: "Historical bitcoin price and trading data"
+      
+      - name: stockprice_historical
+        identifier: stockprice_historical
+        description: "Real-time bitcoin price and trading data"
+  - name: analytics
+    database: project
+    schema: analytics
+    description: "Schema which stores analyzed bitcoin data"
+    tables:
+      - name: weekly_avg
+        identifier: weekly_avg
+        description: "Aggregated bitcoin trading analysis and metrics"
